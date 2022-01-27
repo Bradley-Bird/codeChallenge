@@ -12,7 +12,7 @@ Output:
 */
 
 export function addExclamationPoints(string) {
-    if(string.length >= 1) {
+    if (string.length >= 1) {
         return `${string}!!!`;
     } else if (string === undefined) {
         return undefined;
@@ -116,7 +116,7 @@ Output:
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
     const x = firstNumber + secondNumber;
-    return `Hello! Your lucky number for the day is ${x}.` ;
+    return `Hello! Your lucky number for the day is ${x}.`;
 }
 
 // This function should take an array and return the second item in the array
@@ -133,7 +133,7 @@ Output:
 */
 
 export function getSecondItem(array) {
-    return  array[1];
+    return array[1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
