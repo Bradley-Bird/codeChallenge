@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, returnAsAnArray, returnAsAString, makeLuckyGreeting } from '../functions.js';
+import { addExclamationPoints, multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, returnAsAnArray, returnAsAString, makeLuckyGreeting, getSecondItem } from '../functions.js';
 
 
 const { test, skip } = QUnit;
@@ -198,6 +198,30 @@ test('this test should return a greeting', (expect) => {
     const expected = 'Hello! Your lucky number for the day is 0.7.';
 
     const actual = makeLuckyGreeting(.25, .45);
+
+    expect.equal(actual, expected);
+});
+
+test('this test should get second item', (expect) => {
+    const expected = 4;
+
+    const actual = getSecondItem([0,4,5]);
+
+    expect.equal(actual, expected);
+});
+
+test('this test should pass get second item', (expect) => {
+    const expected = 2;
+
+    const actual = getSecondItem([1,2,3]);
+
+    expect.equal(actual, expected);
+});
+
+test('this test should pass get second item', (expect) => {
+    const expected = 'cat';
+
+    const actual = getSecondItem(['dog','cat','cow']);
 
     expect.equal(actual, expected);
 });
