@@ -40,4 +40,3 @@ test('this test should return "false"', (expect) => {
 
     expect.equal(actual, expected);
 });
-
