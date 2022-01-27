@@ -1,4 +1,3 @@
-
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 /* 
 
@@ -12,8 +11,14 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(string) {
+    if (string.length >= 1) {
+        return `${string}!!!`;
+    } else if (string === undefined) {
+        return undefined;
+    } else {
+        return false;
+    }
 }
 
 // This function should take in a number and multiply it by seven
@@ -49,7 +54,6 @@ export function multiplyBy12ThenHalve(num) {
     return true;
 }
 
-
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
 
 /* 
@@ -65,7 +69,6 @@ Output:
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
     return true;
 }
-
 
 // This function should take in three numbers and return those numbers in an array
 
@@ -151,9 +154,9 @@ export function getLastItem(array) {
 
 // Bonus question:
 
-// This function should make a random number between 0 and 5. 
+// This function should make a random number between 0 and 5.
 
-// Note that this is an impure function, so you'll have to test it without knowing exactly what it will return. 
+// Note that this is an impure function, so you'll have to test it without knowing exactly what it will return.
 
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
